@@ -1,0 +1,110 @@
+{
+  "id": "L5-translation-always-loses",
+  "level": 5,
+  "description": "Every translation between the three ontologies has non-zero residue. The vocabularies do not cover one another.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 900,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null
+  ],
+  "check_translation": true,
+  "expect": {
+    "checks": {
+      "dimension_count": 2,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 7,
+      "becoming_count": 0,
+      "generated_dimension": true,
+      "history_complete": true,
+      "translation_losses": {
+        "O1->O2": 333,
+        "O1->O3": 500,
+        "O2->O1": 583,
+        "O2->O3": 583,
+        "O3->O1": 333,
+        "O3->O2": 333
+      },
+      "all_losses_positive": true
+    },
+    "digest": {
+      "dims": [
+        "d0",
+        "d1"
+      ],
+      "sites": 6,
+      "tick": 3,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600,
+            300
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600,
+            0
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600,
+            0
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "all_losses_positive": true
+    }
+  }
+}

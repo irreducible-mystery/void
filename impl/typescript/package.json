@@ -1,0 +1,16 @@
+{
+  "name": "gfield",
+  "version": "0.0.0",
+  "description": "A generative field -- TypeScript implementation of docs/spec/core.md",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/*.test.js",
+    "conformance": "tsc && node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "L5-worlds-map-only-partially",
+  "level": 5,
+  "description": "Two worlds weighting different coordinates share only part of their support; elsewhere the map is undefined, not defaulted.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 900,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    {
+      "name": "new_level",
+      "params": [
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    null
+  ],
+  "check_worlds": {
+    "a": {
+      "name": "a",
+      "relevance": {
+        "d0": 1000
+      }
+    },
+    "b": {
+      "name": "b",
+      "relevance": {
+        "d1": 1000
+      }
+    }
+  },
+  "expect": {
+    "checks": {
+      "dimension_count": 2,
+      "residual_total": 2400,
+      "entity_count": 0,
+      "accessible_count": 11,
+      "becoming_count": 0,
+      "generated_dimension": true,
+      "history_complete": true,
+      "world_a_support": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "world_b_support": [
+        0,
+        1
+      ],
+      "partial_map_domain": [
+        0,
+        1
+      ],
+      "map_is_partial": true
+    },
+    "digest": {
+      "dims": [
+        "d0",
+        "d1"
+      ],
+      "sites": 7,
+      "tick": 5,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600,
+            300
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600,
+            0
+          ]
+        ],
+        [
+          0,
+          6,
+          [
+            800,
+            0
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600,
+            0
+          ]
+        ],
+        [
+          1,
+          6,
+          [
+            800,
+            0
+          ]
+        ],
+        [
+          2,
+          6,
+          [
+            800,
+            0
+          ]
+        ]
+      ],
+      "entities": [],
+      "residual_total": 2400
+    },
+    "hand_written": {
+      "map_is_partial": true
+    }
+  }
+}

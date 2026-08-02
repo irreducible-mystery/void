@@ -1,0 +1,5 @@
+name = "gfield"
+defaultTargets = ["GField"]
+
+[[lean_lib]]
+name = "GField"

@@ -1,0 +1,115 @@
+{
+  "id": "L5-detached-observation-must-be-declared",
+  "level": 5,
+  "description": "A zero back-action is legitimate but must be stated, and then genuinely changes nothing.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null
+  ],
+  "check_observer": {
+    "site": 0,
+    "back_action": 0
+  },
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 7,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true,
+      "entities_before_observation": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "entities_after_observation": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "observation_changed_field": false
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 6,
+      "tick": 3,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "observation_changed_field": false
+    }
+  }
+}

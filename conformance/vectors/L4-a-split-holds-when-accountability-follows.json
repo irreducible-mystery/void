@@ -1,0 +1,117 @@
+{
+  "id": "L4-a-split-holds-when-accountability-follows",
+  "level": 4,
+  "description": "The same split, with what the field answers to changing alongside it, produces a genuinely new individual. Note that differentiation both severs and reinforces, so all three couplings must follow, not only the severed one.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 8,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          900
+        ]
+      ],
+      [
+        2,
+        3,
+        [
+          900
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 900,
+      "2,3": 900
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    {
+      "name": "differentiate",
+      "params": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "observe": {
+        "0,1": 300,
+        "1,2": 1350,
+        "2,3": 1350
+      }
+    },
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 8,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 8,
+      "tick": 7,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            300
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            1350
+          ]
+        ],
+        [
+          2,
+          3,
+          [
+            1350
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "dimension_count": 1,
+      "entity_count": 1,
+      "generated_dimension": false
+    }
+  }
+}

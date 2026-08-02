@@ -1,0 +1,119 @@
+{
+  "id": "L4-a-split-undoes-itself",
+  "level": 4,
+  "description": "Differentiating while accountability is unchanged regenerates the coupling the split removed. A distinction cannot be imposed by fiat.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 8,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          900
+        ]
+      ],
+      [
+        2,
+        3,
+        [
+          900
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 900,
+      "2,3": 900
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    {
+      "name": "differentiate",
+      "params": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 2,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 8,
+      "becoming_count": 0,
+      "generated_dimension": true,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0",
+        "d1"
+      ],
+      "sites": 8,
+      "tick": 9,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            300,
+            300
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            1350,
+            -450
+          ]
+        ],
+        [
+          2,
+          3,
+          [
+            1350,
+            -450
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "dimension_count": 2,
+      "entity_count": 1,
+      "generated_dimension": true
+    }
+  }
+}

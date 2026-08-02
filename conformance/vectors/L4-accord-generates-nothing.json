@@ -1,0 +1,99 @@
+{
+  "id": "L4-accord-generates-nothing",
+  "level": 4,
+  "description": "Persistence is not sufficient. A field in accord with what it is accountable to invents no distinction.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 7,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 6,
+      "tick": 5,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "dimension_count": 1,
+      "generated_dimension": false
+    }
+  }
+}
