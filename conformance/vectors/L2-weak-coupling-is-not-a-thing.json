@@ -1,0 +1,62 @@
+{
+  "id": "L2-weak-coupling-is-not-a-thing",
+  "level": 2,
+  "description": "Coupling below THETA never condenses, however long it lasts.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 4,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          100
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 100
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 0,
+      "entity_count": 0,
+      "accessible_count": 1,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 4,
+      "tick": 4,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            100
+          ]
+        ]
+      ],
+      "entities": [],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "entity_count": 0,
+      "generated_dimension": false
+    }
+  }
+}

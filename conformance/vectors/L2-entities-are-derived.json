@@ -1,0 +1,99 @@
+{
+  "id": "L2-entities-are-derived",
+  "level": 2,
+  "description": "A cohering, persisting convergence of relations becomes an entity. Nothing declared it.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 0,
+      "entity_count": 1,
+      "accessible_count": 7,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 6,
+      "tick": 3,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "residual_total": 0
+    },
+    "hand_written": {
+      "entity_count": 1,
+      "dimension_count": 1,
+      "residual_total": 0,
+      "generated_dimension": false
+    }
+  }
+}

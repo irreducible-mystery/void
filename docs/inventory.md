@@ -79,30 +79,17 @@ Honest gaps — each is a design decision left to us, not an oversight to paper 
   (cell, stem cell, ecosystem, diagnosis, child/adult). Choosing one to make
   quantitative is the single highest-leverage decision for a runnable version.
 
-## Relation to existing work
+## Where the work is
 
-The paper cites no sources. It nonetheless sits in a well-populated
-neighbourhood, and knowing that is load-bearing for build decisions — much of
-levels 2–3 already exists and should be borrowed, not rebuilt:
+The intellectual and computational neighbourhood is recorded in
+[`RELATED.md`](../RELATED.md), section by section. What matters *for building* is
+which sections are load-bearing.
 
-- **Individuation, preindividual field, symmetry-breaking** (§9) — Simondon.
-- **Events before static states** (§2) — Whitehead's process metaphysics.
-- **Multiplicity, becoming** (§1, ladder) — Deleuze.
-- **Mutual constitution of observer and observed** (§11) — Barad's intra-action;
-  also second-order cybernetics (von Foerster), and the looping effects of
-  classification (Hacking) for §10's diagnosis example.
-- **Expanding possibility space** (§3, §8) — Kauffman's *adjacent possible*; the
-  "unprestatable phase space" literature.
-- **Anticipatory systems** (§3) — Rosen.
-- **Higher categories for transformations-of-transformations** (§6) — applied
-  category theory; concretely [Catlab.jl](https://github.com/AlgebraicJulia/Catlab.jl),
-  [AlgebraicDynamics.jl](https://github.com/AlgebraicJulia/AlgebraicDynamics.jl),
-  [DisCoPy](https://arxiv.org/abs/2005.02975), and
-  [CatColab](https://topos.institute/blog/2024-10-02-introducing-catcolab/).
-- **Worlds with partial maps** (§10) — sheaf-theoretic data fusion; institution
-  theory.
+Levels 2–3 of the ladder are ordinary: relation graphs and transition systems.
+The distinctive claim is the **conjunction** of dimension-generation (§4),
+coupled state/state-space dynamics (§8), and reflexivity (§12) in one framework
+— a system that changes the space it moves in, and models the fact that it does.
 
-The genuinely distinctive claim is the **conjunction**: dimension-generation
-(§4) *plus* coupled state/state-space dynamics (§8) *plus* reflexivity (§12) in
-one framework. None of the projects above attempt all three together. That is
-the defensible novelty and the hardest engineering.
+That conjunction is where every hard engineering problem in
+[`spec/core.md`](spec/core.md) turned out to be, and it is what
+[`conformance/`](../conformance) is built to pin down.

@@ -20,3 +20,10 @@ htmlcov/
 *.swp
 .idea/
 .vscode/
+
+# Lean
+.lake/
+*.olean
+
+# Julia
+Manifest.toml

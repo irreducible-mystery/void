@@ -1,0 +1,136 @@
+{
+  "id": "L3-events-transform-the-field",
+  "level": 3,
+  "description": "Branching a convergence produces a second one; the original survives, so identity follows the arrows.",
+  "seed": {
+    "dims": [
+      "d0"
+    ],
+    "sites": 6,
+    "relations": [
+      [
+        0,
+        1,
+        [
+          600
+        ]
+      ],
+      [
+        1,
+        2,
+        [
+          600
+        ]
+      ],
+      [
+        0,
+        2,
+        [
+          600
+        ]
+      ]
+    ],
+    "observed": {
+      "0,1": 600,
+      "1,2": 600,
+      "0,2": 600
+    }
+  },
+  "schedule": [
+    null,
+    null,
+    null,
+    {
+      "name": "branch",
+      "params": [
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    null,
+    null,
+    null
+  ],
+  "expect": {
+    "checks": {
+      "dimension_count": 1,
+      "residual_total": 1800,
+      "entity_count": 2,
+      "accessible_count": 15,
+      "becoming_count": 0,
+      "generated_dimension": false,
+      "history_complete": true
+    },
+    "digest": {
+      "dims": [
+        "d0"
+      ],
+      "sites": 9,
+      "tick": 7,
+      "relations": [
+        [
+          0,
+          1,
+          [
+            600
+          ]
+        ],
+        [
+          0,
+          2,
+          [
+            600
+          ]
+        ],
+        [
+          1,
+          2,
+          [
+            600
+          ]
+        ],
+        [
+          6,
+          7,
+          [
+            600
+          ]
+        ],
+        [
+          6,
+          8,
+          [
+            600
+          ]
+        ],
+        [
+          7,
+          8,
+          [
+            600
+          ]
+        ]
+      ],
+      "entities": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ],
+      "residual_total": 1800
+    },
+    "hand_written": {
+      "entity_count": 2,
+      "generated_dimension": false
+    }
+  }
+}

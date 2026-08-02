@@ -232,6 +232,14 @@ but it should be made deliberately and stated in the README, not drifted into.
 
 ## Questions
 
+> **Questions 1–4 and 7 are answered** — see [`DECISIONS.md`](DECISIONS.md).
+> In short: all three plans, sequenced; an abstract core grounded in four
+> languages rather than in a domain; Lean, Julia, Python and TypeScript
+> together; and the lineage made explicit in [`RELATED.md`](RELATED.md).
+>
+> The rest are open. Question 3 is the one most worth revisiting now that the
+> abstract core is real and checked.
+
 ### Decisive — these change which plan is right
 
 1. **What should this *be*?** An engine (falsifiable research software), a
